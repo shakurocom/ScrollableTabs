@@ -20,7 +20,7 @@
 
 ### CocoaPods
 
-To integrate Router into your Xcode project with CocoaPods, specify it in your `Podfile`:
+To integrate ScrollableTabs into your Xcode project with CocoaPods, specify it in your `Podfile`:
 
 ```ruby
 pod 'Shakuro.ScrollableTabs'
