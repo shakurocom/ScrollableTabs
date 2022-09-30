@@ -1,4 +1,4 @@
-![Shakuro ScrollableTabs](title_image.png)
+![Shakuro ScrollableTabs](Resources/title_image.png)
 <br><br>
 # ScrollableTabs
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
@@ -9,6 +9,12 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
+
+A `ScrollableTabs` as an alternative for segmented control . `ScrollableTabs` has various configuration options.
+
+`ScrollableTabs` example with default options:
+
+![](Resources/scrollable_tabs_example1.gif)
 
 ## Requirements
 
