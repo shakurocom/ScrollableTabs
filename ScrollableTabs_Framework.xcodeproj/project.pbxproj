@@ -11,6 +11,7 @@
 		17C38090288ED03900D3EE9F /* ScrollableTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C3808E288ED03900D3EE9F /* ScrollableTabs.swift */; };
 		17C38091288ED03900D3EE9F /* ScrollableTabsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C3808F288ED03900D3EE9F /* ScrollableTabsItemView.swift */; };
 		17C38095288ED0C400D3EE9F /* Shakuro.ScrollableTabs.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 17C38094288ED0C400D3EE9F /* Shakuro.ScrollableTabs.podspec */; };
+		6B473CB328E713B70040D82B /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6B473CB228E713B70040D82B /* .swiftlint.yml */; };
 		DBCA373CB9E1247ED26E9362 /* Pods_ScrollableTabs_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6ECBB2CAC63F7CC90CE4C3 /* Pods_ScrollableTabs_Framework.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		17C38093288ED05500D3EE9F /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		17C38094288ED0C400D3EE9F /* Shakuro.ScrollableTabs.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Shakuro.ScrollableTabs.podspec; sourceTree = "<group>"; };
 		1F32DDE3E0B60E61779A99B8 /* Pods-ScrollableTabs_Framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollableTabs_Framework.debug.xcconfig"; path = "Target Support Files/Pods-ScrollableTabs_Framework/Pods-ScrollableTabs_Framework.debug.xcconfig"; sourceTree = "<group>"; };
+		6B473CB228E713B70040D82B /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		DC6ECBB2CAC63F7CC90CE4C3 /* Pods_ScrollableTabs_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollableTabs_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA34DCA0EA42774F41177916 /* Pods-ScrollableTabs_Framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollableTabs_Framework.release.xcconfig"; path = "Target Support Files/Pods-ScrollableTabs_Framework/Pods-ScrollableTabs_Framework.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,10 +48,11 @@
 				17C38093288ED05500D3EE9F /* LICENSE.md */,
 				17C38092288ED05500D3EE9F /* README.md */,
 				17C38094288ED0C400D3EE9F /* Shakuro.ScrollableTabs.podspec */,
-				17C38084288ECF6D00D3EE9F /* ScrollableTabs_Framework */,
+				6B473CB228E713B70040D82B /* .swiftlint.yml */,
 				17C3808D288ED03900D3EE9F /* Source */,
-				17C38083288ECF6D00D3EE9F /* Products */,
+				17C38084288ECF6D00D3EE9F /* ScrollableTabs_Framework */,
 				39F73948039C97A480753680 /* Pods */,
+				17C38083288ECF6D00D3EE9F /* Products */,
 				48640572BE320C5BD06F2DB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +89,6 @@
 				1F32DDE3E0B60E61779A99B8 /* Pods-ScrollableTabs_Framework.debug.xcconfig */,
 				EA34DCA0EA42774F41177916 /* Pods-ScrollableTabs_Framework.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -168,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B473CB328E713B70040D82B /* .swiftlint.yml in Resources */,
 				17C38095288ED0C400D3EE9F /* Shakuro.ScrollableTabs.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
