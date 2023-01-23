@@ -14,7 +14,6 @@
 		17C380AF288ED14800D3EE9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C380AD288ED14800D3EE9F /* LaunchScreen.storyboard */; };
 		17C380B7288ED43900D3EE9F /* ScrollableTabs_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C380B6288ED43900D3EE9F /* ScrollableTabs_Framework.framework */; };
 		17C380B8288ED43900D3EE9F /* ScrollableTabs_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17C380B6288ED43900D3EE9F /* ScrollableTabs_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		745446EF3AE316CC52E93A75 /* Pods_ScrollableTabs_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF01DA99904B0BCC76561E86 /* Pods_ScrollableTabs_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,9 +39,6 @@
 		17C380AE288ED14800D3EE9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17C380B0288ED14800D3EE9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17C380B6288ED43900D3EE9F /* ScrollableTabs_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ScrollableTabs_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		683592F78434239863E0D89D /* Pods-ScrollableTabs_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollableTabs_Example.release.xcconfig"; path = "Target Support Files/Pods-ScrollableTabs_Example/Pods-ScrollableTabs_Example.release.xcconfig"; sourceTree = "<group>"; };
-		83CFA341A7E2AABFF3ED42B9 /* Pods-ScrollableTabs_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollableTabs_Example.debug.xcconfig"; path = "Target Support Files/Pods-ScrollableTabs_Example/Pods-ScrollableTabs_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FF01DA99904B0BCC76561E86 /* Pods_ScrollableTabs_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollableTabs_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +47,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				17C380B7288ED43900D3EE9F /* ScrollableTabs_Framework.framework in Frameworks */,
-				745446EF3AE316CC52E93A75 /* Pods_ScrollableTabs_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				17C380B6288ED43900D3EE9F /* ScrollableTabs_Framework.framework */,
-				FF01DA99904B0BCC76561E86 /* Pods_ScrollableTabs_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -101,8 +95,6 @@
 		BBEC5510D72C28FB948F1EDA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				83CFA341A7E2AABFF3ED42B9 /* Pods-ScrollableTabs_Example.debug.xcconfig */,
-				683592F78434239863E0D89D /* Pods-ScrollableTabs_Example.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -114,7 +106,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17C380B3288ED14800D3EE9F /* Build configuration list for PBXNativeTarget "ScrollableTabs_Example" */;
 			buildPhases = (
-				028CEAA551961027BA6AFC44 /* [CP] Check Pods Manifest.lock */,
 				17C380BA288ED47500D3EE9F /* Swiftlint script */,
 				17C3809B288ED14600D3EE9F /* Sources */,
 				17C3809C288ED14600D3EE9F /* Frameworks */,
@@ -177,28 +168,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		028CEAA551961027BA6AFC44 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ScrollableTabs_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		17C380BA288ED47500D3EE9F /* Swiftlint script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,7 +336,6 @@
 		};
 		17C380B4288ED14800D3EE9F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83CFA341A7E2AABFF3ED42B9 /* Pods-ScrollableTabs_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -397,7 +365,6 @@
 		};
 		17C380B5288ED14800D3EE9F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 683592F78434239863E0D89D /* Pods-ScrollableTabs_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
