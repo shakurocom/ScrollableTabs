@@ -24,6 +24,7 @@ internal class ScrollableTabsItemView: UIView {
     internal let index: Int
     private var textAttributesNormal: [NSAttributedString.Key: Any]
     private var textAttributesSelected: [NSAttributedString.Key: Any]
+    private var accessibilitySelectedTitle: String?
     private var isSelected: Bool = false
 
     // MARK: - Initialization
@@ -38,11 +39,13 @@ internal class ScrollableTabsItemView: UIView {
                   numberOfLines: Int,
                   textAttributesNormal: [NSAttributedString.Key: Any],
                   textAttributesSelected: [NSAttributedString.Key: Any],
+                  accessibilitySelectedTitle: String?,
                   delegate: ScrollableTabsItemViewDelegate) {
         self.text = text
         self.index = index
         self.textAttributesNormal = textAttributesNormal
         self.textAttributesSelected = textAttributesSelected
+        self.accessibilitySelectedTitle = accessibilitySelectedTitle
         self.delegate = delegate
 
         super.init(frame: CGRect.zero)
@@ -112,6 +115,20 @@ internal class ScrollableTabsItemView: UIView {
     private func updateText() {
         let attributes = isSelected ? textAttributesSelected : textAttributesNormal
         textLabel.attributedText = NSAttributedString(string: text, attributes: attributes)
+        setupAccessibility()
+    }
+
+    private func setupAccessibility() {
+        textLabel.isAccessibilityElement = false
+        var label = ""
+        if isSelected {
+            label.append(accessibilitySelectedTitle ?? "Selected")
+            label.append(", ")
+        }
+        if let text = textLabel.text {
+            label.append(text)
+        }
+        button.accessibilityLabel = label
     }
 
 }

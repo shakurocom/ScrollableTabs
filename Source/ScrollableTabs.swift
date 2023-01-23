@@ -47,6 +47,8 @@ public class ScrollableTabs: UIView {
     /// Default value is 0.3 seconds.
     public var selectionAnimationDuration: TimeInterval = 0.3
 
+    public var accessibilitySelectedTitle: String?
+
     /// Scroll view with views, corresponding to items.
     private var contentScrollView: UIScrollView!
     private var contentView: UIView!
@@ -270,6 +272,7 @@ public class ScrollableTabs: UIView {
                                                   numberOfLines: 1,
                                                   textAttributesNormal: currentTextAttributesNormal,
                                                   textAttributesSelected: currentTextAttributesSelected,
+                                                  accessibilitySelectedTitle: accessibilitySelectedTitle,
                                                   delegate: self)
             itemView.translatesAutoresizingMaskIntoConstraints = false
             itemsContainerView.addSubview(itemView)
